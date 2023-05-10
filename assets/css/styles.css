@@ -76,6 +76,9 @@ a {
 /* ----------------------------------------- Header-top ------------------------------------------------------ */
 
 .header-top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -526,4 +529,52 @@ a {
     color: #fff;
     background: #2e80ce;
     cursor: pointer;
+}
+
+/* ========================================== Install ========================================================= */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    background: #2e80ce;
+    border-radius: 4px;
+}
+
+.install__img {
+    margin-top: -95px;
+    display: block;
+    width: 285px;
+    height: 522px;
+    object-fit: cover;
+}
+
+.install__content {
+    max-width: 586px;
+}
+
+.install__heading {
+    color: #fff;
+}
+
+.install__desc {
+    color: #fff;
+}
+
+.install__cta {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
+}
+
+.install__btn {
+    transition: all 0.4s;
+}
+
+.install__btn:hover {
+    transform: scale(1.1);
 }
